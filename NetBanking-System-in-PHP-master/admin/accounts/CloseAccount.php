@@ -420,12 +420,12 @@ mysqli_multi_query($conn, $resetQuery) or die(mysqli_error($conn));
 
         });
     </script>
-    <script>
+    <!-- <script>
         // This Condition Avoid Confirm resubmisssion form state from website and refresh pahe freshly 
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
         }
-    </script>
+    </script> -->
 
 
 </body>
