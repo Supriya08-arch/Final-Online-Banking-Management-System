@@ -7,12 +7,12 @@
     define('DB_password', '');
     define('DB_name', 'skybank');
    // $conn = mysqli_connect("localhost", "root", null, "skybank");;
-    // $conn = mysqli_connect("localhost:3306", "root", "", "skybank");
+    $conn = mysqli_connect("localhost:3306", "root", "", "skybank");
 
-    // if (!$conn) {
-    //     die("connection failed" . mysqli_connect_error());
-    //      echo "Connection Fail";
-    // }
+    if (!$conn) {
+        die("connection failed" . mysqli_connect_error());
+         echo "Connection Fail";
+    }
     // $query = " SELECT * FROM login";
     // $result = mysqli_query($conn, $query) or die("Query Fail");
 

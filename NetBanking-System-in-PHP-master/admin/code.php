@@ -301,8 +301,8 @@ if (isset($_POST['TSenderAc'])) {
                     }
                 }
             }
-//         } else {
-//             echo "Transaction Fail minimum amount required 100 rs";
-//         }
-//     }
-// }
+        } else {
+            echo "Transaction Fail minimum amount required 100 rs";
+        }
+    }
+}
