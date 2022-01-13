@@ -659,11 +659,11 @@ GROUP BY
 
         });
     </script>
-    <script>
+    <!-- <script>
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
         }
-    </script>
+    </script> -->
 
     <script>
         var modal = document.getElementById("myModal");
