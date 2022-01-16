@@ -3,27 +3,27 @@ include "../connection.php";
 
 session_start();
 
-if (!isset($_SESSION['username'])) {
-    header("Location: ../login.php");
-}
-$username = $_SESSION['username'];
+// if (!isset($_SESSION['username'])) {
+//     header("Location: ../login.php");
+// }
+// $username = $_SESSION['username'];
 
-$query = "SELECT * FROM customer_detail JOIN login ON customer_detail.Account_No = login.AccountNo JOIN accounts ON accounts.AccountNo = login.AccountNo WHERE login.Username = '$username'";
-$result = mysqli_query($conn, $query) or mysqli_error($conn);
+// $query = "SELECT * FROM customer_detail JOIN login ON customer_detail.Account_No = login.AccountNo JOIN accounts ON accounts.AccountNo = login.AccountNo WHERE login.Username = '$username'";
+// $result = mysqli_query($conn, $query) or mysqli_error($conn);
 
-if (mysqli_num_rows($result) > 0) {
-    while ($row = mysqli_fetch_assoc($result)) {
+// if (mysqli_num_rows($result) > 0) {
+//     while ($row = mysqli_fetch_assoc($result)) {
 
-        $AccountNo = $row['AccountNo'];
-        $Fname = $row['C_First_Name'];
-        $Lname = $row['C_Last_Name'];
-        $color = $row['ProfileColor'];
-    }
-    $ProfileText = substr($Fname, 0, 1);
-    $_SESSION['AccountNo'] = $AccountNo;
-    $_SESSION['ProfileText'] = $ProfileText;
-    $_SESSION['ProfileColor'] = $color;
-}
+//         $AccountNo = $row['AccountNo'];
+//         $Fname = $row['C_First_Name'];
+//         $Lname = $row['C_Last_Name'];
+//         $color = $row['ProfileColor'];
+//     }
+//     $ProfileText = substr($Fname, 0, 1);
+//     $_SESSION['AccountNo'] = $AccountNo;
+//     $_SESSION['ProfileText'] = $ProfileText;
+//     $_SESSION['ProfileColor'] = $color;
+// }
 
 
 // SELECT Date, SUM(Credit), SUM(Debit) FROM transaction WHERE AccountNo = '412211317400' GROUP BY Date
