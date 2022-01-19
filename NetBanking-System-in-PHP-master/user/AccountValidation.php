@@ -39,20 +39,20 @@
     }
 
     // checking Email is set or not
-    if (isset($_POST['EmailAddress'])) {
+    // if (isset($_POST['EmailAddress'])) {
 
-        /* storing Email in varible using mysqli_real_escape_string function to remove special charaters like double quotes or etc */
-        $Email = mysqli_real_escape_string($conn, $_POST['EmailAddress']);
+    //     /* storing Email in varible using mysqli_real_escape_string function to remove special charaters like double quotes or etc */
+    //     $Email = mysqli_real_escape_string($conn, $_POST['EmailAddress']);
 
-       // sql query to check Pan no is available or not
-        $query2 = "SELECT * FROM customer_detail WHERE C_Email = '".$Email."'";
+    //    // sql query to check Pan no is available or not
+    //     $query2 = "SELECT * FROM customer_detail WHERE C_Email = '".$Email."'";
 
-        // stroing result rows in variable
-        $result2 = mysqli_query($conn, $query2);
+    //     // stroing result rows in variable
+    //     $result2 = mysqli_query($conn, $query2);
                 
-          // this single line perform most important role this line print output and this output is send to the ajax
-        echo mysqli_num_rows($result2);
-    }
+    //       // this single line perform most important role this line print output and this output is send to the ajax
+    //     echo mysqli_num_rows($result2);
+    // }
 
 
     // // Sending otp Email to Customer
