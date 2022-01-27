@@ -395,10 +395,10 @@ if (isset($_POST['submit'])) {
 
         <!-- Tab 1 -->
 
-        <div class="tab mb-3">
+        <!-- <div class="tab mb-3">
             <h3 class="mb-3 stepHead">Step 1/3</h3>
             <p class="SubAction">Personal Detail:</p>
-            <div class="row g-2 mb-3">
+            <div class="row g-2 mb-3"> -->
                 <div class="col-md">
                     <div class="form-floating">
                         <input type="text" name="FirstName" class="form-control" id="FirstName" placeholder="First Name">
