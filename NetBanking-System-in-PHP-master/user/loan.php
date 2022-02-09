@@ -109,14 +109,14 @@ if (isset($_POST['submit'])) {
 </select>
 
             
-            <!-- <div class="row g-2 mb-3">
+            <div class="row g-2 mb-3">
                 <div class="col-md">
                     <div class="form-floating">
                         <input type="text" name="FirstName" class="form-control" id="FirstName" placeholder="First Name">
                         <label for="floatingInputGrid">First Name</label>
 
                        
-                    </div> -->
+                    </div>
                 </div>
                 <div class="col-md">
                     <div class="col-md">
