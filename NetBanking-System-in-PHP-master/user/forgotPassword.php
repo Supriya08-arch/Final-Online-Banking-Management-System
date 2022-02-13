@@ -197,7 +197,7 @@ if (isset($_SESSION['username'])) {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="../assets/js/sweetalert.min.js"></script>
 
-    <!-- <script>
+    <script>
         <?php if (isset($_GET['error'])) { ?>
             swal({
                 title: "Account Alert!",
@@ -207,7 +207,7 @@ if (isset($_SESSION['username'])) {
 
 
         <?php } ?>
-    </script> -->
+    </script>
 </body>
 
 </html>
